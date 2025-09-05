@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>언더 검색방</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>언더 검색방</h1>
+        <div class="tab-menu">
+            <button class="tab-button active" data-tab="tab1">질병의 KCD코드 검색</button>
+            <button class="tab-button" data-tab="tab2">직업의 분류기준 검색</button>
+            <button class="tab-button" data-tab="tab3">담보의 보장내용 설명</button>
+        </div>
+
+        <div id="tab1" class="tab-content active">
+            <div class="search-box">
+                <input type="text" id="diseaseInput" placeholder="질병명을 입력하세요">
+                <button class="search-button">검색</button>
+            </div>
+            <div id="diseaseResult" class="result-box"></div>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <div class="search-box">
+                <input type="text" id="jobInput" placeholder="직업명을 입력하세요">
+                <button class="search-button">검색</button>
+            </div>
+            <div id="jobResult" class="result-box"></div>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <div class="search-box">
+                <input type="text" id="coverageInput" placeholder="담보명을 입력하세요">
+                <button class="search-button">검색</button>
+            </div>
+            <div id="coverageResult" class="result-box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

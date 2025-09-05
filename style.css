@@ -1,0 +1,111 @@
+:root {
+    --main-blue: #3498db;
+    --dark-blue: #2980b9;
+    --light-blue: #ecf0f1;
+    --text-color: #333;
+    --result-bg: #e8f5ff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-blue);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--main-blue);
+    margin-bottom: 20px;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.tab-button {
+    flex-grow: 1;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main-blue);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+    background-color: var(--main-blue);
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.search-box {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background-color: var(--main-blue);
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.result-box {
+    margin-top: 25px;
+    background-color: var(--result-bg);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: left;
+    min-height: 100px;
+}
+
+.result-box h4 {
+    color: var(--dark-blue);
+    margin-top: 0;
+}
